@@ -19,49 +19,103 @@ h1 {
 }
 
 
-/* Navigation */
+ /* TESTING NAVBAR */
 
-.navbar {
+
+ .site-header {
+    position: relative;
+  }
+  
+  .site-header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .wrapper {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-item a {
+    display: block;
+    padding: 1.5rem 1rem;
+  }
+  .nav_wrapper {
+    display: flex;
+  }
+  
+  /* This moves donate btn to the center of nav  */
+  
+  .site-header_end {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .donate {
+    display: flex;
+  }
+
+
+
+/* Navigation-Old */
+
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.5em;
     width: 100%;
     padding-top: 56px;
     color:  #000000;
     cursor: pointer;
-}
+    margin-left: auto;
+} */
 
 
-div.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-}
+/* div.logo {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* width: auto; */
+/* } */ 
 
-.logo.navbar {
-    display: flex;
-    justify-content: flex-start;
-}
-
+/* .logo.navbar {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+/* } */ 
+/* 
 li.header-nav-item {
     display: flex;
     justify-content: flex-end;
-}
+} */
 
 
 
 
 /****** stuck here on moving the main menu items button ******/
-.container {
+/* .container {
     display: flex;
+    justify-content: center;
 }
 
 
 .container li a {
     text-decoration: none;
-}
+    color: #000000;
+} */
   
     
  /* Howard Beach Clean-up Picture */
