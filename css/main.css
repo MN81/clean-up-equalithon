@@ -149,22 +149,28 @@ li.header-nav-item {
     
  /* Howard Beach Clean-up Picture */
 
-.community-cleanup-title h1 {
-    position: absolute;
+ .howard-beach-img {
+    position: relative;   
+    width:100%;
+    /* height: auto; */
+}
+
+/* .community-cleanup-title h1 { */
+    /* position: absolute;
     bottom: 750px;
     left: 75px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px; */
+
+    .howard-beach-img h1 {
     color: white;
     font-size: 4.0625rem;
+    position: absolute;
+    top:350px;
+    left: 75px;
+    width: 100%;
 }
 
-
-
-.howard-beach-img {
-    width:100vw;
-    height: auto;
-}
 
  div.howard-beach-img {
 width: 100%;
@@ -326,12 +332,15 @@ p.text-block-3 {
 }
 
 div.plan-btn {
-   position: relative;
-    padding-right: 195px;
+   position: absolute;
+    /* padding-right: 195px; */
+   right: 700px;
 }
 
 div.join-btn {
-    position: relative;   
+    position: relative; 
+    right: 525px;  
+    
 }
 
 /* .tool-btn img {
