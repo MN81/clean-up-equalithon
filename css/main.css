@@ -7,13 +7,13 @@
 html {
 font-size: 16px;
 background-color: #FFFFFF;
-font-family: 'Oswald', sans-serif;
 color: #000000;
 }
 
 body {
    width: 100%;
     min-height: 100vh;  
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
@@ -30,6 +30,8 @@ h1 {
 
  .site-header {
     position: relative;
+    
+
   }
   
 /* This moves donate btn to the center of nav  */
@@ -44,8 +46,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    padding-bottom:1rem;
-    
+    padding-bottom:1rem;  
     }
 
     .nav-item a {
@@ -89,6 +90,11 @@ h1 {
     list-style: none;
   }
   
+
+
+  .get-involved a {
+      color: #F7BD40;
+  }
   
 /* Hamburger Menu from W3 schools */
 
@@ -143,50 +149,74 @@ li.header-nav-item {
     
  /* Howard Beach Clean-up Picture */
 
- .howard-beach-img {
-    background-size: cover;
-    object-fit: cover;
-     width: 1440px;
-     height: auto;
-  }
+.community-cleanup-title h1 {
+    position: absolute;
+    bottom: 750px;
+    left: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 4.0625rem;
+}
 
-  div.howard-beach-img {
-      clear: both;
 
-  }
 
+.howard-beach-img {
+    width:100vw;
+    height: auto;
+}
+
+ div.howard-beach-img {
+width: 100%;
+height: 100%;
+     /* object-fit: cover; */
+}
+
+.community-cleanup-text {
+    padding: 80px;
+    font-size: 1.5rem;
+}
   
 /* Achievements Section */
 
   div.full-width {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       width: 100%;
       color: white;
-      font-size: 0.75rem;
+      font-size: 1.5rem;
       background-color: #00A862;
       padding-left: 15px;
   }
 
-  h1.full-width {
-      font-size: 4.0625rem;
 
+  .full-width h1 p ul {
+      flex-grow: 1;
   }
 
- .full-width li {
-    padding-left: 55px;
-}
-
+  .full-width h1 {
+      justify-content: flex-end;
+      font-size: 4.0625rem;
+  }
 
 .full-width li {
     position: relative;
     list-style-type: circle;
-    margin-left: 50px;
+    margin-left: 145px;
     padding-left: 0;
    
 }
 
 .full-width ul {
-    line-height: 1.25rem;
+    line-height: 2.25rem;
 }
+
+li::marker {
+    content: "• ";
+    color: white;
+  }
 
 span {
     font-weight: 600;
@@ -194,8 +224,7 @@ span {
 
 /* Graph */
 
-div.graph {
-        
+div.graph {   
     display: flex;
     align-items: center;
    object-fit: cover;
@@ -203,55 +232,143 @@ div.graph {
   padding-bottom: 40px;
  /* margin-left: 30px;  */
  margin: auto;
+
 }
 
 /* Let's Make a Change Section */
 
-.change {
-    padding-left: 20px;  
+.change-title {
+    font-size: 2rem;
+    padding-left:16px;
+
 }
+
+.change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;  
+    padding-right: 20px;
+    margin: 0;
+}
+
 
 
 
 div.card {
-   display: inline-block; 
-    width: 240px;
-    padding-left: 100px;
+   /* display: inline-block;  */
+   flex-grow: 1;
+    /* width: 240px; */
+    /* padding-left: 27px; */
     
 }
 
 .card img {
-    width: 240px;
+    /* width: 375px; */
     object-fit: cover;
-    padding-right: 15px;
+    width: 100%;
+    padding-right: 20px;
     
   
 }
 
 .card h3 {
-    width: 240px;
-    padding: 15px 0;
+   padding: 15px 0;
+   font-size: 2.25em;
 }
 
 .card p {
-    width: 240px;
+    font-size: 1.5rem;
     padding-bottom: 15px;
     padding-right: 15px;
 }
 
+/* Buttons */
 
-div.change-btn a{
+.tool-btn {
+    /* position: relative; */
+
+    
+}
+
+div.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-grow: 1;
+}
+
+.text-block {
+    position: relative;
+    bottom: 65px;
+    padding: 30px;
+    line-height: 20px;   
+}
+
+p.text-block-2 {
+    position:relative;
+    bottom: 65px;
+    padding: 30px;
+    line-height: 20px;
+    padding-left: 40px;
+}
+
+p.text-block-3 {
+    position:relative;
+    bottom: 65px;
+    padding: 30px;
+    line-height: 20px;
+}
+
+.tool-btn {
+    padding-left: 15px;  
+}
+
+div.plan-btn {
+   position: relative;
+    padding-right: 195px;
+}
+
+div.join-btn {
+    position: relative;   
+}
+
+/* .tool-btn img {
+    width: 160px;
+    height: 45px;
+} */
+div.plan-btn { 
+    /* position: relative;
+    width: 120px;
+    height: 45px;
+    /* padding-left: 20px; */
+    /* padding-left: 0; */ */
+
+}
+
+ .join-btn img {
+
+    /* position: relative;
+    width: 140px;
+    height: 45px; */
+    
+}
+
+
+/* div.change-btn a{
     display: inline-block;
     text-decoration: none;
     color: black;
-}
+} */
 
-div.change-btn img {
+/* div.change-btn img {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 0;
+    padding: 0; */
 }
+
 
 
 /* Media */
@@ -308,3 +425,13 @@ div.change-btn img {
           right: 1rem;
           top: 1rem; 
           } }
+
+
+          /* @media (max-width: 1100px)
+          {
+              div.graph {
+                  width: 800px;
+              }
+          } */
+
+          /* @media (max-width:1250px) {} */
