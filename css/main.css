@@ -21,8 +21,7 @@ h1 {
     font-size: 64px;
 }
 
-
- /* TESTING NAVBAR from headers-css.versel.app/header-3.html */
+ /*  Navbar from headers-css.versel.app/header-3.html */
 
  .logo {
      width: 230px;
@@ -30,26 +29,23 @@ h1 {
 
  .site-header {
     position: relative;
-    
-
   }
-  
-/* This moves donate btn to the center of nav  */
   
 .site-header_end {
     display: flex;
-    align-items: center;
-  }
+    align-self: center;
+      }
 
   .site-header_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    padding-bottom:1rem;  
+    padding-bottom:1rem; 
+    flex-grow: 1; 
     }
 
-    .nav-item a {
+.nav-item a {
         display: block;
         padding: 1.5rem 1rem;
         font-size: 1.5rem;
@@ -58,6 +54,7 @@ h1 {
    
     .donate {
         display: flex;
+       
       }
 
       .donate_toggle {
@@ -66,10 +63,10 @@ h1 {
         font-size: 0;
         }
 
+  
+
   .wrapper {
     max-width: 1140px;
-    /* margin-left: auto;
-    margin-right: auto; */
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -96,56 +93,6 @@ h1 {
       color: #F7BD40;
   }
   
-/* Hamburger Menu from W3 schools */
-
-
-/* Navigation-Old */
-
-/* .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.5em;
-    width: 100%;
-    padding-top: 56px;
-    color:  #000000;
-    cursor: pointer;
-    margin-left: auto;
-} */
-
-
-/* div.logo {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* width: auto; */
-/* } */ 
-
-/* .logo.navbar {
-    /* display: flex; */
-    /* justify-content: flex-start; */
-/* } */ 
-/* 
-li.header-nav-item {
-    display: flex;
-    justify-content: flex-end;
-} */
-
-
-
-
-/****** stuck here on moving the main menu items button ******/
-/* .container {
-    display: flex;
-    justify-content: center;
-}
-
-
-.container li a {
-    text-decoration: none;
-    color: #000000;
-} */
-  
     
  /* Howard Beach Clean-up Picture */
 
@@ -154,13 +101,6 @@ li.header-nav-item {
     width:100%;
     /* height: auto; */
 }
-
-/* .community-cleanup-title h1 { */
-    /* position: absolute;
-    bottom: 750px;
-    left: 75px;
-    padding-left: 20px;
-    padding-right: 20px; */
 
     .howard-beach-img h1 {
     color: white;
@@ -175,7 +115,7 @@ li.header-nav-item {
  div.howard-beach-img {
 width: 100%;
 height: 100%;
-     /* object-fit: cover; */
+   
 }
 
 .community-cleanup-text {
@@ -236,7 +176,6 @@ div.graph {
    object-fit: cover;
   padding-top: 20px;
   padding-bottom: 40px;
- /* margin-left: 30px;  */
  margin: auto;
 
 }
@@ -245,7 +184,7 @@ div.graph {
 
 .change-title {
     font-size: 2rem;
-    padding-left:16px;
+    padding-left:20px;
 
 }
 
@@ -258,24 +197,21 @@ div.graph {
     margin: 0;
 }
 
-
-
-
 div.card {
-   /* display: inline-block;  */
-   flex-grow: 1;
-    /* width: 240px; */
-    /* padding-left: 27px; */
-    
+   flex-grow: 1;  
+   
+  
 }
 
+div.card.litter-card {
+  padding-top: 5px; 
+}
+
+
 .card img {
-    /* width: 375px; */
     object-fit: cover;
     width: 100%;
     padding-right: 20px;
-    
-  
 }
 
 .card h3 {
@@ -291,93 +227,53 @@ div.card {
 
 /* Buttons */
 
-.tool-btn {
-    /* position: relative; */
-
-    
-}
-
-div.btn-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    flex-grow: 1;
-}
-
-.text-block {
+ .text-block {
     position: relative;
-    bottom: 65px;
-    padding: 30px;
-    line-height: 20px;   
+    bottom: 50px;
+    color: #FFFFFF;
+    padding: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+ 
 }
 
 p.text-block-2 {
-    position:relative;
-    bottom: 65px;
-    padding: 30px;
-    line-height: 20px;
-    padding-left: 40px;
+    position: relative;
+    bottom: 50px;
+    color: #FFFFFF;
+    padding: 5px;
+    left: 5px;
+    font-size: 1.5rem;
 }
 
 p.text-block-3 {
-    position:relative;
-    bottom: 65px;
-    padding: 30px;
-    line-height: 20px;
+    position: relative;
+    bottom: 50px;
+    color: #FFFFFF;
+    padding: 5px;
+    left: 5px;
+    font-size: 1.5rem;
 }
 
-.tool-btn {
-    padding-left: 15px;  
+img.tool-btn {
+  width: 196px;
+  height: 38px; 
+  bottom: 40px;
+   
+} 
+
+
+img.plan-btn {
+  width: 123px;
+  height: 38px;    
 }
 
-div.plan-btn {
-   position: absolute;
-    /* padding-right: 195px; */
-   right: 700px;
+img.join-btn {
+  width: 153px;
+  height: 38px;   
 }
 
-div.join-btn {
-    position: relative; 
-    right: 525px;  
-    
-}
-
-/* .tool-btn img {
-    width: 160px;
-    height: 45px;
-} */
-div.plan-btn { 
-    /* position: relative;
-    width: 120px;
-    height: 45px;
-    /* padding-left: 20px; */
-    /* padding-left: 0; */ */
-
-}
-
- .join-btn img {
-
-    /* position: relative;
-    width: 140px;
-    height: 45px; */
-    
-}
-
-
-/* div.change-btn a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-} */
-
-/* div.change-btn img {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 0; */
-}
-
+ 
 
 
 /* Media */
@@ -410,16 +306,6 @@ div.plan-btn {
     } 
     }
 
-/* 
-      @media (max-width: 799px) {
-        .nav_toggle {
-          display: block;
-          position: absolute;
-          right: 1rem;
-          top: 1rem; 
-        } 
-    } */
-
     @media (min-width: 800px) {
         .donate_toggle {
           padding-left: 10px; } }
@@ -435,12 +321,7 @@ div.plan-btn {
           top: 1rem; 
           } }
 
+     
+        
 
-          /* @media (max-width: 1100px)
-          {
-              div.graph {
-                  width: 800px;
-              }
-          } */
-
-          /* @media (max-width:1250px) {} */
+        
