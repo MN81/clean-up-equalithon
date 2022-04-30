@@ -143,6 +143,13 @@ div.change-btn img {
     padding: 0;
 }
 
+.clean-application {
+    text-decoration: underline;
+}
+
+.end-cleanup {
+    text-decoration: underline;
+}
 
 /* Media */
 
